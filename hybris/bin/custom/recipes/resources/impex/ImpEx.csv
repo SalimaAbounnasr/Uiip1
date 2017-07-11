@@ -1,41 +1,41 @@
-INSERT Food; codeFood; descrizione
-;food1;carrot
-;food2;peas
-;food3;rocket
-;food3;cheddar
-;food4;hamburger
-;food5;sausage
-;food6;lettuce
-;food7;onion
-;food8;pepper
-;food9;chicken
-;food10;eggs
-;food11;tomato
-;food12;beans
-;food13;lettuce
-;food14;mozzarella
-;food15;bacon
+INSERT Food; id; name
+;f1;eggs
+;f2;milk
+;f3;water
+;f4;tomato
+;f5;beans
+;f6;beef
+;f7;Salad
+;f8;oil
+;f9;potatoes
+;f10;carrots
+;f11;rice
+;f12;tomato
+;f13;beans
+;f14;sugar
+;f15;meat
+;f16;chocolate
 
-INSERT Recipe; codeRecipe; nome
-;recipe1;estiva
-;recipe2;invernale
-;recipe3;primaverile
-;recipe4;leggera
-;recipe5;pesante
-;recipe6;dolce
-;recipe7;aspra
-;recipe8;salata
-;recipe9;piccante
-;recipe10;autunnale
+INSERT Recipe; id; name; servings
+;r1;spaghetti;3
+;r2;russian salad;4
+;r3;cookies;2
+;r4;spanish rice;6
+;r5;muffins;4
+;r6;pancakes;3
+;r7;roast beef;5
+;r8;salad;2
+;r9;pizza;6
 
-INSERT Recipe2Food; Recipe; groups(codeFood) [mode=replace]
-;recipe1; food1,food8,food12,food13
-;recipe2; food5,food3,food7,food15
-;recipe3; food1,food3,food10,food14
-;recipe4; food2,food5,food7,food11
-;recipe5; food5,food7,food11,food15
-;recipe6; food2,food4,food6,food8
-;recipe7; food3,food5,food7,food9
-;recipe8; food4,food6,food11,food14
-;recipe9; food1,food8,food9,food12
-;recipe10; food4,food6,food7,food15
+
+INSERT RecipeEntry; entryNumber; displayName; food(id)
+;1;name1;f3
+;2;name2;f5
+;3;name3;f2
+;4;name4;f3
+;5;name5;f6
+;6;name6;f1
+;7;name7;f2
+;8;name8;f3
+;9;name9;f10
+;10;name10;f9

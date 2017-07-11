@@ -8,10 +8,13 @@
  * ("Confidential Information"). You shall not disclose such Confidential
  * Information and shall use it only in accordance with the terms of the
  * license agreement you entered into with hybris.
- * 
- *  
+ *
+ *
  */
 package de.hybris.platform.recipes.constants;
+
+import en.hybris.platform.recipes.constants.GeneratedRecipesConstants;
+
 
 /**
  * Global class for all Recipes constants. You can add global constants for your extension into this class.
