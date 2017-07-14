@@ -1,6 +1,0 @@
-
-SELECT {codeFood} FROM {Food};
-SELECT {nome} FROM {Recipe};
-SELECT {codeRecipe} FROM {Recipe} WHERE {nome} LIKE '%a';
-SELECT {codeFood} FROM {Food} WHERE {descrizione} LIKE 'l%';
-SELECT {*} FROM {Food} WHERE {descrizione} LIKE '*r*';

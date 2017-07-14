@@ -1,0 +1,39 @@
+INSERT_UPDATE StageRace;code[unique=true];name[language=en];numberStages;nation[language=en];cyclistRanking(code)
+;strace1;GirodItalia;16;Italy;cyrank3
+;strace2;Vuelta;12;Spain;cyrank1
+;strace3;TourdeFrance;18;France;cyrank4
+;strace4;Liege Bastigne Liege;8;France;cyrank5
+
+INSERT_UPDATE CyclistRanking;code[unique=true];name[language=en];totalRank;totalTime
+;cyrank1;TourDeFrance;first;444.25
+;cyrank2;TourDeFrance;second;451.32
+;cyrank3;TourDeFrance;third;453.50
+;cyrank4;GirodItalia;first;494.70
+;cyrank5;GirodItalia;second;514.35
+;cyrank6;GirodItalia;third;524.25
+;cyrank7;Vuelta;first;535.55
+
+INSERT_UPDATE Stage;code[unique=true];name[language=en];cityStart[language=en];cityArrive[language=en];date;km
+;st1;MilanTurin;Milan;Turin;04/08/2017;70
+;st2;NaplesRome;Naples;Rome;04/05/20171;50
+;st3;RomeFlorence;Rome;Florence;10/08/2017;120
+;st4;MadridSevilla;Madrid;Sevilla;07/07/2017;150
+;st5;ParisBordeux;Paris;Bordeux;01/006/2017;70
+;st6;BarcelonaMadrid;Barcelona;Madrid;;04/09/2017;100
+
+INSERT_UPDATE StageRanking;code[unique=true];time;ranking;cyclist(code)
+;strank1;15.30;first;cy2
+;strank2;16.30;second;cy3
+;strank3;16.50;third;cy7
+;strank4;18.30;fourth;cy5
+;strank5;19.20;fifth;cy6
+;strank5;21.10;sixth;cy1
+
+INSERT_UPDATE Cyclist;code[unique=true];name[language=en]
+;cy1;FrancescoCiccarelli
+;cy2;SalimaAbounnasr
+;cy3;GiovanniTrotta
+;cy4;FrancescoFiorentino
+;cy5;FlavioDIppolito
+;cy6;CarmineCaiazza
+;cy7;GenerosoGiangregorio
